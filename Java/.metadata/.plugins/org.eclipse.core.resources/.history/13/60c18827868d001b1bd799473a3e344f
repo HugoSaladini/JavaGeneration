@@ -1,0 +1,42 @@
+package Tarefa1;
+
+import java.util.Scanner;
+
+public class Exer1AnosEmDias {
+		/*
+		 *  Faça um sistema que leia a idade de uma pessoa expressa em anos, meses e dias e 
+		 *  mostre-a expressa apenas em dias.
+		 *  inteiro ano
+		    inteiro mes
+	      	inteiro dia
+
+			escreva ("Quantos anos você tem hoje?")
+			leia (ano)
+			escreva ("Quantos meses você tem?")
+			leia (mes)
+			escreva ("quantos dias você tem?")
+			leia (dia)	
+
+			escreva (" \nVocê esta vivo a aproximadamente ", ((ano*365) + (mes*30) + dia), "dias")
+		 */
+	public static void main(String[] args) {
+
+		Scanner leia = new Scanner(System.in);  //instanciar = criar
+		
+		int ano, mes, dia;
+		
+		System.out.println("Quantos anos você tem ?");
+		ano = leia.nextInt();
+		System.out.println("Quantos meses você tem ?");
+		mes = leia.nextInt();
+		System.out.println("Quantos dias você tem ?");
+		dia = leia.nextInt();
+		
+		System.out.printf("Você esta vivo a ", (ano*365) + (mes*30) + (dia), "dias");
+		
+				
+	}
+
+}
+
+

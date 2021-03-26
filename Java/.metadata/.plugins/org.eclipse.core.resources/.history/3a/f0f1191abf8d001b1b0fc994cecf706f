@@ -1,0 +1,33 @@
+package Tarefa1;
+
+import java.util.Scanner;
+
+public class Exer6DistanEntrePontos {
+
+	public static void main(String[] args) {
+		// Construa um programa em c que, tendo como dados de entrada dois pontos quaisquer no plano, 
+		// P(x1, y1) e P(x2, y2), escreva a distância entre eles
+		Scanner ler = Scanner(System.in);
+		
+		double x1, x2, y1, y2, d, r;
+		
+		
+		System.out.println("Determine o valor de X1: ");
+		x1 = ler.nextDouble();
+		System.out.println("Determine o valor de x2: ");
+		x2 = ler.nextDouble();
+		System.out.println("Determine o valor de y1: ");
+		y1 = ler.nextDouble();
+		System.out.println("Determine o valor de y2: ");
+		y2 = ler.nextDouble();
+		
+		r = ((x2-x1) * 2) + ((y2-y1) * 2);
+	
+		d = Math.sqrt(r);
+		
+		System.out.println("A distancia total entre os pontos estabeleciados é: " + d);
+		
+		
+		}
+
+}

@@ -1,0 +1,12 @@
+package OUTROS;
+
+public class Mundo {
+	
+	public static void name(String[] args) {
+		
+		System.out.println("Olá Mundo");
+		
+	}
+		
+
+}
